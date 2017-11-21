@@ -1,4 +1,4 @@
-# SwaggerClient::WebhooksApi
+# Upcall::WebhooksApi
 
 All URIs are relative to *https://localhost/api/v2*
 
@@ -21,18 +21,18 @@ Create webhook
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'upcall'
 
-api_instance = SwaggerClient::WebhooksApi.new
+api_instance = Upcall::WebhooksApi.new
 
-webhook = SwaggerClient::Webhook.new # Webhook | Webhook data
+webhook = Upcall::Webhook.new # Webhook | Webhook data
 
 
 begin
   #Create a new webhook
   result = api_instance.create_webhook(webhook)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Upcall::ApiError => e
   puts "Exception when calling WebhooksApi->create_webhook: #{e}"
 end
 ```
@@ -68,9 +68,9 @@ Delete webhook
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'upcall'
 
-api_instance = SwaggerClient::WebhooksApi.new
+api_instance = Upcall::WebhooksApi.new
 
 id = "id_example" # String | ID of webhook
 
@@ -78,7 +78,7 @@ id = "id_example" # String | ID of webhook
 begin
   #Delete a webhook
   api_instance.delete_webhook(id)
-rescue SwaggerClient::ApiError => e
+rescue Upcall::ApiError => e
   puts "Exception when calling WebhooksApi->delete_webhook: #{e}"
 end
 ```
@@ -114,9 +114,9 @@ Fetch webhook
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'upcall'
 
-api_instance = SwaggerClient::WebhooksApi.new
+api_instance = Upcall::WebhooksApi.new
 
 id = "id_example" # String | ID of webhook
 
@@ -125,7 +125,7 @@ begin
   #Get a specific webhook
   result = api_instance.fetch_webhook(id)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Upcall::ApiError => e
   puts "Exception when calling WebhooksApi->fetch_webhook: #{e}"
 end
 ```
@@ -161,9 +161,9 @@ Fetch webhooks
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'upcall'
 
-api_instance = SwaggerClient::WebhooksApi.new
+api_instance = Upcall::WebhooksApi.new
 
 opts = { 
   limit: 56, # Integer | Amount of records to return. 25 by default.
@@ -178,7 +178,7 @@ begin
   #Get all webhooks
   result = api_instance.fetch_webhooks(opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Upcall::ApiError => e
   puts "Exception when calling WebhooksApi->fetch_webhooks: #{e}"
 end
 ```
@@ -219,20 +219,20 @@ Update webhook
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'upcall'
 
-api_instance = SwaggerClient::WebhooksApi.new
+api_instance = Upcall::WebhooksApi.new
 
 id = "id_example" # String | ID of webhook
 
-webhook = SwaggerClient::Webhook1.new # Webhook1 | Webhook data
+webhook = Upcall::Webhook1.new # Webhook1 | Webhook data
 
 
 begin
   #Update a webhook
   result = api_instance.update_webhook(id, webhook)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Upcall::ApiError => e
   puts "Exception when calling WebhooksApi->update_webhook: #{e}"
 end
 ```

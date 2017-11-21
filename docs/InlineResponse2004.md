@@ -1,4 +1,4 @@
-# SwaggerClient::InlineResponse2004
+# Upcall::InlineResponse2004
 
 ## Properties
 Name | Type | Description | Notes

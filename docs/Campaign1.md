@@ -1,4 +1,4 @@
-# SwaggerClient::Campaign1
+# Upcall::Campaign1
 
 ## Properties
 Name | Type | Description | Notes

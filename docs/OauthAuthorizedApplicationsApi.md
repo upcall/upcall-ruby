@@ -1,4 +1,4 @@
-# SwaggerClient::OauthAuthorizedApplicationsApi
+# Upcall::OauthAuthorizedApplicationsApi
 
 All URIs are relative to *https://localhost/api/v2*
 
@@ -18,14 +18,14 @@ Fetch Oauth authorized applications
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'upcall'
 
-api_instance = SwaggerClient::OauthAuthorizedApplicationsApi.new
+api_instance = Upcall::OauthAuthorizedApplicationsApi.new
 
 begin
   result = api_instance.fetch_oauth_authorized_applications
   p result
-rescue SwaggerClient::ApiError => e
+rescue Upcall::ApiError => e
   puts "Exception when calling OauthAuthorizedApplicationsApi->fetch_oauth_authorized_applications: #{e}"
 end
 ```
@@ -58,16 +58,16 @@ Revoke Oauth authorized application
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'upcall'
 
-api_instance = SwaggerClient::OauthAuthorizedApplicationsApi.new
+api_instance = Upcall::OauthAuthorizedApplicationsApi.new
 
 id = "id_example" # String | ID of authorized application
 
 
 begin
   api_instance.revoke_oauth_authorized_application(id)
-rescue SwaggerClient::ApiError => e
+rescue Upcall::ApiError => e
   puts "Exception when calling OauthAuthorizedApplicationsApi->revoke_oauth_authorized_application: #{e}"
 end
 ```

@@ -1,4 +1,4 @@
-# SwaggerClient::Question
+# Upcall::Question
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::ContactAttribute
+# Upcall::ContactAttribute
 
 ## Properties
 Name | Type | Description | Notes

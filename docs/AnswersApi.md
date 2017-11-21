@@ -1,4 +1,4 @@
-# SwaggerClient::AnswersApi
+# Upcall::AnswersApi
 
 All URIs are relative to *https://localhost/api/v2*
 
@@ -18,9 +18,9 @@ Fetching answers for contact
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'upcall'
 
-api_instance = SwaggerClient::AnswersApi.new
+api_instance = Upcall::AnswersApi.new
 
 id = "id_example" # String | ID of contact
 
@@ -36,7 +36,7 @@ begin
   #Get contact's answers
   result = api_instance.fetch_contact_answers(id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Upcall::ApiError => e
   puts "Exception when calling AnswersApi->fetch_contact_answers: #{e}"
 end
 ```
@@ -77,9 +77,9 @@ Fetching answers for question
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'upcall'
 
-api_instance = SwaggerClient::AnswersApi.new
+api_instance = Upcall::AnswersApi.new
 
 id = "id_example" # String | ID of question
 
@@ -95,7 +95,7 @@ begin
   #Get question's answers
   result = api_instance.fetch_question_answers(id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Upcall::ApiError => e
   puts "Exception when calling AnswersApi->fetch_question_answers: #{e}"
 end
 ```

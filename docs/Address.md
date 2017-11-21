@@ -1,4 +1,4 @@
-# SwaggerClient::Address
+# Upcall::Address
 
 ## Properties
 Name | Type | Description | Notes

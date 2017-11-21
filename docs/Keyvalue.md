@@ -1,4 +1,4 @@
-# SwaggerClient::Keyvalue
+# Upcall::Keyvalue
 
 ## Properties
 Name | Type | Description | Notes

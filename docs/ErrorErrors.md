@@ -1,4 +1,4 @@
-# SwaggerClient::ErrorErrors
+# Upcall::ErrorErrors
 
 ## Properties
 Name | Type | Description | Notes

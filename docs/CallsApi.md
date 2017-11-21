@@ -1,4 +1,4 @@
-# SwaggerClient::CallsApi
+# Upcall::CallsApi
 
 All URIs are relative to *https://localhost/api/v2*
 
@@ -18,9 +18,9 @@ Fetching calls for company
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'upcall'
 
-api_instance = SwaggerClient::CallsApi.new
+api_instance = Upcall::CallsApi.new
 
 opts = { 
   limit: 56, # Integer | Amount of records to return. 25 by default.
@@ -35,7 +35,7 @@ begin
   #Get all calls
   result = api_instance.fetch_calls(opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Upcall::ApiError => e
   puts "Exception when calling CallsApi->fetch_calls: #{e}"
 end
 ```
@@ -76,9 +76,9 @@ Fetching calls for campaign
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'upcall'
 
-api_instance = SwaggerClient::CallsApi.new
+api_instance = Upcall::CallsApi.new
 
 id = "id_example" # String | ID of campaign
 
@@ -95,7 +95,7 @@ begin
   #Get all calls for a campaign
   result = api_instance.fetch_calls_for_campaign(id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Upcall::ApiError => e
   puts "Exception when calling CallsApi->fetch_calls_for_campaign: #{e}"
 end
 ```

@@ -1,4 +1,4 @@
-# SwaggerClient::CustomFieldsApi
+# Upcall::CustomFieldsApi
 
 All URIs are relative to *https://localhost/api/v2*
 
@@ -17,9 +17,9 @@ Fetching custom fields for contact
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'upcall'
 
-api_instance = SwaggerClient::CustomFieldsApi.new
+api_instance = Upcall::CustomFieldsApi.new
 
 id = "id_example" # String | ID of contact
 
@@ -33,7 +33,7 @@ begin
   #Get custom fields
   result = api_instance.fetch_custom_fields(id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Upcall::ApiError => e
   puts "Exception when calling CustomFieldsApi->fetch_custom_fields: #{e}"
 end
 ```

@@ -1,4 +1,4 @@
-# SwaggerClient::OauthAuthorizedApplication
+# Upcall::OauthAuthorizedApplication
 
 ## Properties
 Name | Type | Description | Notes

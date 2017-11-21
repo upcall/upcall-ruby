@@ -1,4 +1,4 @@
-# SwaggerClient::CampaignsApi
+# Upcall::CampaignsApi
 
 All URIs are relative to *https://localhost/api/v2*
 
@@ -21,18 +21,18 @@ Create campaign
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'upcall'
 
-api_instance = SwaggerClient::CampaignsApi.new
+api_instance = Upcall::CampaignsApi.new
 
-campaign = SwaggerClient::Campaign.new # Campaign | Campaign data
+campaign = Upcall::Campaign.new # Campaign | Campaign data
 
 
 begin
   #Create a new campaign
   result = api_instance.create_campaign(campaign)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Upcall::ApiError => e
   puts "Exception when calling CampaignsApi->create_campaign: #{e}"
 end
 ```
@@ -68,9 +68,9 @@ Delete campaign
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'upcall'
 
-api_instance = SwaggerClient::CampaignsApi.new
+api_instance = Upcall::CampaignsApi.new
 
 id = "id_example" # String | ID of campaign
 
@@ -78,7 +78,7 @@ id = "id_example" # String | ID of campaign
 begin
   #Delete a campaign
   api_instance.delete_campaign(id)
-rescue SwaggerClient::ApiError => e
+rescue Upcall::ApiError => e
   puts "Exception when calling CampaignsApi->delete_campaign: #{e}"
 end
 ```
@@ -114,9 +114,9 @@ Fetch a campaign
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'upcall'
 
-api_instance = SwaggerClient::CampaignsApi.new
+api_instance = Upcall::CampaignsApi.new
 
 id = "id_example" # String | ID of campaign
 
@@ -125,7 +125,7 @@ begin
   #Get a specific campaign
   result = api_instance.fetch_campaign(id)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Upcall::ApiError => e
   puts "Exception when calling CampaignsApi->fetch_campaign: #{e}"
 end
 ```
@@ -161,9 +161,9 @@ Fetch campaigns
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'upcall'
 
-api_instance = SwaggerClient::CampaignsApi.new
+api_instance = Upcall::CampaignsApi.new
 
 opts = { 
   limit: 56, # Integer | Amount of records to return. 25 by default.
@@ -185,7 +185,7 @@ begin
   #Get all campaigns
   result = api_instance.fetch_campaigns(opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Upcall::ApiError => e
   puts "Exception when calling CampaignsApi->fetch_campaigns: #{e}"
 end
 ```
@@ -233,20 +233,20 @@ Update campaign
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'upcall'
 
-api_instance = SwaggerClient::CampaignsApi.new
+api_instance = Upcall::CampaignsApi.new
 
 id = "id_example" # String | ID of campaign
 
-campaign = SwaggerClient::Campaign1.new # Campaign1 | Campaign data
+campaign = Upcall::Campaign1.new # Campaign1 | Campaign data
 
 
 begin
   #Update a campaign
   result = api_instance.update_campaign(id, campaign)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Upcall::ApiError => e
   puts "Exception when calling CampaignsApi->update_campaign: #{e}"
 end
 ```

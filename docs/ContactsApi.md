@@ -1,4 +1,4 @@
-# SwaggerClient::ContactsApi
+# Upcall::ContactsApi
 
 All URIs are relative to *https://localhost/api/v2*
 
@@ -22,13 +22,13 @@ Create contact for campaign
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'upcall'
 
-api_instance = SwaggerClient::ContactsApi.new
+api_instance = Upcall::ContactsApi.new
 
 id = "id_example" # String | ID of campaign
 
-contact = SwaggerClient::Contact.new # Contact | Contact data
+contact = Upcall::Contact.new # Contact | Contact data
 
 opts = { 
   custom_fields: true # BOOLEAN | If set, custom fields will be displayed in the output
@@ -38,7 +38,7 @@ begin
   #Add a contact to a campaign
   result = api_instance.create_contact(id, contact, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Upcall::ApiError => e
   puts "Exception when calling ContactsApi->create_contact: #{e}"
 end
 ```
@@ -76,9 +76,9 @@ Delete contact
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'upcall'
 
-api_instance = SwaggerClient::ContactsApi.new
+api_instance = Upcall::ContactsApi.new
 
 id = "id_example" # String | ID of contact to delete
 
@@ -86,7 +86,7 @@ id = "id_example" # String | ID of contact to delete
 begin
   #Delete contact
   api_instance.delete_contact(id)
-rescue SwaggerClient::ApiError => e
+rescue Upcall::ApiError => e
   puts "Exception when calling ContactsApi->delete_contact: #{e}"
 end
 ```
@@ -122,9 +122,9 @@ Fetching contacts for campaign
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'upcall'
 
-api_instance = SwaggerClient::ContactsApi.new
+api_instance = Upcall::ContactsApi.new
 
 id = "id_example" # String | ID of campaign
 
@@ -150,7 +150,7 @@ begin
   #Get contacts for a campaign
   result = api_instance.fetch_contacts(id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Upcall::ApiError => e
   puts "Exception when calling ContactsApi->fetch_contacts: #{e}"
 end
 ```
@@ -201,9 +201,9 @@ Fetching custom fields for contact
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'upcall'
 
-api_instance = SwaggerClient::ContactsApi.new
+api_instance = Upcall::ContactsApi.new
 
 id = "id_example" # String | ID of contact
 
@@ -217,7 +217,7 @@ begin
   #Get custom fields
   result = api_instance.fetch_custom_fields(id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Upcall::ApiError => e
   puts "Exception when calling ContactsApi->fetch_custom_fields: #{e}"
 end
 ```
@@ -256,9 +256,9 @@ Fetch specific contact
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'upcall'
 
-api_instance = SwaggerClient::ContactsApi.new
+api_instance = Upcall::ContactsApi.new
 
 id = "id_example" # String | ID of contact to fetch
 
@@ -270,7 +270,7 @@ begin
   #Get a specific contact
   result = api_instance.fetch_specific_contact(id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Upcall::ApiError => e
   puts "Exception when calling ContactsApi->fetch_specific_contact: #{e}"
 end
 ```
@@ -307,13 +307,13 @@ Update contact
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'upcall'
 
-api_instance = SwaggerClient::ContactsApi.new
+api_instance = Upcall::ContactsApi.new
 
 id = "id_example" # String | ID of contact to update
 
-contact = SwaggerClient::Contact1.new # Contact1 | Contact data
+contact = Upcall::Contact1.new # Contact1 | Contact data
 
 opts = { 
   custom_fields: true # BOOLEAN | If set, custom fields will be displayed in the output
@@ -323,7 +323,7 @@ begin
   #Update a contact
   result = api_instance.update_contact(id, contact, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Upcall::ApiError => e
   puts "Exception when calling ContactsApi->update_contact: #{e}"
 end
 ```

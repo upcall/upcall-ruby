@@ -1,4 +1,4 @@
-# SwaggerClient::QuestionsApi
+# Upcall::QuestionsApi
 
 All URIs are relative to *https://localhost/api/v2*
 
@@ -17,9 +17,9 @@ Fetching questions for campaign
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'upcall'
 
-api_instance = SwaggerClient::QuestionsApi.new
+api_instance = Upcall::QuestionsApi.new
 
 id = "id_example" # String | ID of campaign
 
@@ -33,7 +33,7 @@ begin
   #Get campaign's questions
   result = api_instance.fetch_campaign_questions(id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Upcall::ApiError => e
   puts "Exception when calling QuestionsApi->fetch_campaign_questions: #{e}"
 end
 ```

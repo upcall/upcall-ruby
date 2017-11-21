@@ -1,4 +1,4 @@
-# SwaggerClient::Webhook
+# Upcall::Webhook
 
 ## Properties
 Name | Type | Description | Notes
