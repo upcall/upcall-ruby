@@ -1,6 +1,6 @@
 # Upcall::AnswersApi
 
-All URIs are relative to *https://localhost/api/v2*
+All URIs are relative to *https://api.upcall.com/api/v2*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------

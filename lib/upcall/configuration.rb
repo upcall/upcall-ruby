@@ -1,7 +1,7 @@
 =begin
 #Upcall API
 
-#A RESTful API (json) to manage your outbound sales campaigns.
+#A RESTful API (json) to manage your human-powered outbound call campaigns.
 
 OpenAPI spec version: 2
 Contact: support@upcall.com
@@ -129,7 +129,7 @@ module Upcall
 
     def initialize
       @scheme = 'https'
-      @host = ''
+      @host = 'api.upcall.com'
       @base_path = '/api/v2'
       @api_key = {}
       @api_key_prefix = {}
