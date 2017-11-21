@@ -3,6 +3,6 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**contacts** | [**Array&lt;ContactDefault&gt;**](ContactDefault.md) |  | [optional] 
+**campaigns** | [**Array&lt;Campaign&gt;**](Campaign.md) |  | [optional] 
 
 

@@ -3,6 +3,6 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**contact** | [**ContactDefault**](ContactDefault.md) |  | [optional] 
+**contact** | [**Contact**](Contact.md) |  | [optional] 
 
 

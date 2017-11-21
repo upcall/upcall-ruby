@@ -3,6 +3,6 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**calls** | [**Array&lt;CallDefault&gt;**](CallDefault.md) |  | [optional] 
+**campaign** | [**Campaign**](Campaign.md) |  | [optional] 
 
 
