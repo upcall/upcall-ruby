@@ -54,6 +54,12 @@ Please follow the [installation](#installation) procedure and then run the follo
 # Load the gem
 require 'upcall'
 
+# Setup authorization
+Upcall.configure do |config|
+  # Configure OAuth2 access token for authorization: oauth2
+  config.access_token = 'YOUR ACCESS TOKEN'
+end
+
 api_instance = Upcall::AnswersApi.new
 
 id = "id_example" # String | ID of contact

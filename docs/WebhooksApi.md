@@ -22,6 +22,11 @@ Create webhook
 ```ruby
 # load the gem
 require 'upcall'
+# setup authorization
+Upcall.configure do |config|
+  # Configure OAuth2 access token for authorization: oauth2
+  config.access_token = 'YOUR ACCESS TOKEN'
+end
 
 api_instance = Upcall::WebhooksApi.new
 
@@ -49,7 +54,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[oauth2](../README.md#oauth2)
 
 ### HTTP request headers
 
@@ -69,6 +74,11 @@ Delete webhook
 ```ruby
 # load the gem
 require 'upcall'
+# setup authorization
+Upcall.configure do |config|
+  # Configure OAuth2 access token for authorization: oauth2
+  config.access_token = 'YOUR ACCESS TOKEN'
+end
 
 api_instance = Upcall::WebhooksApi.new
 
@@ -95,7 +105,7 @@ nil (empty response body)
 
 ### Authorization
 
-No authorization required
+[oauth2](../README.md#oauth2)
 
 ### HTTP request headers
 
@@ -115,6 +125,11 @@ Fetch webhook
 ```ruby
 # load the gem
 require 'upcall'
+# setup authorization
+Upcall.configure do |config|
+  # Configure OAuth2 access token for authorization: oauth2
+  config.access_token = 'YOUR ACCESS TOKEN'
+end
 
 api_instance = Upcall::WebhooksApi.new
 
@@ -142,7 +157,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[oauth2](../README.md#oauth2)
 
 ### HTTP request headers
 
@@ -162,6 +177,11 @@ Fetch webhooks
 ```ruby
 # load the gem
 require 'upcall'
+# setup authorization
+Upcall.configure do |config|
+  # Configure OAuth2 access token for authorization: oauth2
+  config.access_token = 'YOUR ACCESS TOKEN'
+end
 
 api_instance = Upcall::WebhooksApi.new
 
@@ -200,7 +220,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[oauth2](../README.md#oauth2)
 
 ### HTTP request headers
 
@@ -220,6 +240,11 @@ Update webhook
 ```ruby
 # load the gem
 require 'upcall'
+# setup authorization
+Upcall.configure do |config|
+  # Configure OAuth2 access token for authorization: oauth2
+  config.access_token = 'YOUR ACCESS TOKEN'
+end
 
 api_instance = Upcall::WebhooksApi.new
 
@@ -250,7 +275,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[oauth2](../README.md#oauth2)
 
 ### HTTP request headers
 

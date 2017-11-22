@@ -18,6 +18,11 @@ Fetching questions for campaign
 ```ruby
 # load the gem
 require 'upcall'
+# setup authorization
+Upcall.configure do |config|
+  # Configure OAuth2 access token for authorization: oauth2
+  config.access_token = 'YOUR ACCESS TOKEN'
+end
 
 api_instance = Upcall::QuestionsApi.new
 
@@ -53,7 +58,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[oauth2](../README.md#oauth2)
 
 ### HTTP request headers
 

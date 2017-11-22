@@ -19,6 +19,11 @@ Fetch Oauth authorized applications
 ```ruby
 # load the gem
 require 'upcall'
+# setup authorization
+Upcall.configure do |config|
+  # Configure OAuth2 access token for authorization: oauth2
+  config.access_token = 'YOUR ACCESS TOKEN'
+end
 
 api_instance = Upcall::OauthAuthorizedApplicationsApi.new
 
@@ -39,7 +44,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-No authorization required
+[oauth2](../README.md#oauth2)
 
 ### HTTP request headers
 
@@ -59,6 +64,11 @@ Revoke Oauth authorized application
 ```ruby
 # load the gem
 require 'upcall'
+# setup authorization
+Upcall.configure do |config|
+  # Configure OAuth2 access token for authorization: oauth2
+  config.access_token = 'YOUR ACCESS TOKEN'
+end
 
 api_instance = Upcall::OauthAuthorizedApplicationsApi.new
 
@@ -84,7 +94,7 @@ nil (empty response body)
 
 ### Authorization
 
-No authorization required
+[oauth2](../README.md#oauth2)
 
 ### HTTP request headers
 
