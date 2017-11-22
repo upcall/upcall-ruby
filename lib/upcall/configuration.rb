@@ -196,7 +196,7 @@ module Upcall
     # Returns Auth Settings hash for api client.
     def auth_settings
       {
-        'upcall_auth' =>
+        'oauth2' =>
           {
             type: 'oauth2',
             in: 'header',

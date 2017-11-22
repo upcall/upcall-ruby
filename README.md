@@ -142,7 +142,7 @@ Class | Method | HTTP request | Description
 ## Documentation for Authorization
 
 
-### upcall_auth
+### oauth2
 
 - **Type**: OAuth
 - **Flow**: application
